@@ -11,6 +11,7 @@
 #include <dt-bindings/zmk/rgb.h>
 
 // https://github.com/nickcoutsos/keymap-editor/wiki/Keycodes-for-other-locales
+
 #include "keys_de.h"
 
 &mmv_input_listener { input-processors = <&zip_xy_scaler 2 1>; };
@@ -63,9 +64,24 @@
             key-positions = <1 15 29>;
         };
 
-        Right_CTRL {
-            bindings = <&kp LEFT_CONTROL>;
+        RIGHT_CTRL_HR {
+            bindings = <&kp RIGHT_CONTROL>;
             key-positions = <23 24>;
+        };
+
+        LEFT_CTRL_HR {
+            bindings = <&kp LEFT_CONTROL>;
+            key-positions = <17 16>;
+        };
+
+        LEFT_ALT_HR {
+            bindings = <&kp LEFT_ALT>;
+            key-positions = <17 16 15>;
+        };
+
+        RIGHT_ALT_HR {
+            bindings = <&kp RIGHT_ALT>;
+            key-positions = <23 24 25>;
         };
     };
 
@@ -73,12 +89,12 @@
         compatible = "zmk,keymap";
 
         default_layer {
-            display-name = "QWERTZ";
+            display-name = "MAIN";
             bindings = <
-&kp ESCAPE  &kp Q  &kp W  &kp E           &kp R  &kp T                      &none         &kp DE_Z      &kp U  &kp I            &kp O    &kp P     &kp BSPC
-&kp TAB     &kp A  &kp S  &kp D           &kp F  &kp G               &none  &none  &none  &kp H      &kp J  &kp K            &kp L    &kp SEMI  &kp SQT
-&kp LCTRL   &kp DE_Y  &kp X  &kp C           &kp V  &kp B      &none           &none         &kp N      &kp M  &kp COMMA        &kp DOT  &kp FSLH  &kp COLON
-                          &kp LEFT_SHIFT  &mo 1  &kp SPACE                                &kp ENTER  &mo 2  &kp RIGHT_SHIFT
+&kp ESCAPE     &kp DE_Q  &kp DE_W  &kp DE_E        &kp DE_R  &kp DE_T                   &none         &kp DE_Z   &kp DE_U  &kp DE_I         &kp DE_O       &kp DE_P          &kp DE_U_UMLAUT
+&kp BACKSPACE  &kp DE_A  &kp DE_S  &kp DE_D        &kp DE_F  &kp DE_G            &none  &none  &none  &kp DE_H   &kp DE_J  &kp DE_K         &kp DE_L       &kp DE_O_UMLAUT   &kp DE_A_UMLAUT
+&kp LCMD       &kp DE_Y  &kp DE_X  &kp DE_C        &kp DE_V  &kp DE_B   &none           &none         &kp DE_N   &kp DE_M  &kp DE_COMMA     &kp DE_PERIOD  &kp DE_LESS_THAN  &kp DE_GREATER_THAN
+                                   &kp LEFT_SHIFT  &mo 1     &kp SPACE                                &kp ENTER  &mo 2     &kp RIGHT_SHIFT
             >;
         };
 
