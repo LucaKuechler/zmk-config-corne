@@ -8,7 +8,7 @@ layers:
   - R
   - T
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - DE Z
+  - (ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD Y))
   - U
   - I
   - O
@@ -30,7 +30,7 @@ layers:
   - {t: ;, s: ':'}
   - {t: '''', s: '"'}
   - $$mdi:apple-keyboard-control$$
-  - DE Y
+  - (ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD Z))
   - X
   - C
   - V
