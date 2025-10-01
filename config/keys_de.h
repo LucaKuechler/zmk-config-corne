@@ -339,3 +339,12 @@
 
 /* € */
 #define DE_EURO (RA(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_E)))
+
+
+/*
+ * -------------------------------------------------------------------------------------------
+ *	MACOS 
+ * -------------------------------------------------------------------------------------------
+ */
+
+#define DE_DQT_MAC (LS(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_2_AND_AT)))

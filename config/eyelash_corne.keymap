@@ -12,7 +12,6 @@
 // https://github.com/nickcoutsos/keymap-editor/wiki/Keycodes-for-other-locales
 
 #include "keys_de.h"
-#include "keys_de_mac.h"
 
 &mmv_input_listener { input-processors = <&zip_xy_scaler 2 1>; };
 
