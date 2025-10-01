@@ -176,8 +176,8 @@
         mac_upper_layer {
             display-name = "X-SYM";
             bindings = <
-&trans  &kp DE_MAC_EXCLAMATION       &kp DE_MAC_AT_SIGN 	&kp DE_MAC_DOLLAR  &kp DE_MAC_PERCENT     &kp DE_MAC_PIPE                       &none         &kp DE_AMPERSAND     &kp DE_MAC_LEFT_PARENTHESIS  &kp DE_MAC_RIGHT_PARENTHESIS  &kp DE_MAC_PLUS   &kp DE_MAC_CARET     &kp DE_EURO
-&trans  &kp DE_DOUBLE_QUOTES  &kp DE_SINGLE_QUOTE  &kp DE_MAC_EQUAL   &kp DE_UNDERSCORE  &kp DE_MAC_LESS_THAN           &none  &none  &none  &kp DE_MAC_GREATER_THAN  &kp DE_MAC_LEFT_BRACKET      &kp DE_MAC_RIGHT_BRACKET      &kp DE_MINUS  &kp DE_MAC_QUESTION  &kp CAPSLOCK
+&trans  &kp DE_MAC_EXCLAMATION       &kp DE_MAC_AT_SIGN 	&kp DE_MAC_DOLLAR  &kp DE_MAC_PERCENT     &kp DE_MAC_PIPE                       &none         &kp DE_MAC_AMPERSAND     &kp DE_MAC_LEFT_PARENTHESIS  &kp DE_MAC_RIGHT_PARENTHESIS  &kp DE_MAC_PLUS   &kp DE_MAC_CARET     &kp DE_EURO
+&trans  &kp DE_DOUBLE_QUOTES  &kp DE_MAC_SINGLE_QUOTE  &kp DE_MAC_EQUAL   &kp DE_MAC_UNDERSCORE  &kp DE_MAC_LESS_THAN           &none  &none  &none  &kp DE_MAC_GREATER_THAN  &kp DE_MAC_LEFT_BRACKET      &kp DE_MAC_RIGHT_BRACKET      &kp DE_MINUS  &kp DE_MAC_QUESTION  &kp CAPSLOCK
 &trans  &kp DE_MAC_GRAVE          &kp DE_ACUTE         &none          &kp DE_TILDE       &kp DE_MAC_BACKSLASH  &none           &none         &kp DE_MAC_SLASH         &kp DE_MAC_LEFT_BRACE        &kp DE_MAC_RIGHT_BRACE        &kp DE_ASTRK  &kp DE_HASH      &trans
                                                    &trans         &trans             &trans                                          &trans               &trans                   &trans
             >;
