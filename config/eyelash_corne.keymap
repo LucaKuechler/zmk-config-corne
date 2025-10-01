@@ -164,7 +164,7 @@
         };
 
         mac_lower_layer {
-            display-name = "X-NUMBER";
+            display-name = "X-NUM";
             bindings = <
 &trans  &kp N1  &kp N2  &kp N3   &kp N4   &kp N5                   &none         &kp N6    &kp N7         &kp N8       &kp N9     &kp N0  &none
 &kp F1  &kp F2  &kp F3  &kp F4   &kp F5   &kp F6            &none  &none  &none  &kp LEFT  &kp DOWN       &kp UP       &kp RIGHT  &none   &none
@@ -173,8 +173,8 @@
             >;
         };
 
-        layer_6 {
-            display-name = "X-SYMBOL";
+        mac_upper_layer {
+            display-name = "X-SYM";
             bindings = <
 &trans  &kp EXCLAMATION       &kp AT_SIGN          &kp DE_DOLLAR  &kp DE_PERCENT     &kp DE_PIPE                       &none         &kp DE_AMPERSAND     &kp DE_LEFT_PARENTHESIS  &kp DE_RIGHT_PARENTHESIS  &kp DE_PLUS   &kp DE_CARET     &kp DE_EURO
 &trans  &kp DE_DOUBLE_QUOTES  &kp DE_SINGLE_QUOTE  &kp DE_EQUAL   &kp DE_UNDERSCORE  &kp DE_LESS_THAN           &none  &none  &none  &kp DE_GREATER_THAN  &kp DE_LEFT_BRACKET      &kp DE_RIGHT_BRACKET      &kp DE_MINUS  &kp DE_QUESTION  &kp CAPSLOCK
