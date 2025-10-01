@@ -57,10 +57,6 @@
 #include <dt-bindings/zmk/hid_usage_pages.h>
 #include <dt-bindings/zmk/modifiers.h>
 
-/* ! */
-#define DE_EXCLAMATION_MAC (LS(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_1_AND_EXCLAMATION)))
-#define DE_EXCL (DE_EXCLAMATION_MAC)
-
 /* " */
 #define DE_DOUBLE_QUOTES_MAC (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_APOSTROPHE_AND_QUOTE))
-#define DE_DQT_MAC (DE_DOUBLE_QUOTES)
+#define DE_DQT_MAC (DE_DOUBLE_QUOTES_MAC)
