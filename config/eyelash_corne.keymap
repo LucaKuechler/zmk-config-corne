@@ -98,7 +98,7 @@
         };
 
         SWITCH_TO_MAC {
-            bindings = <&to 4>;
+            bindings = <&to 0>;
             key-positions = <0 13 28>;
             layers = <0>;
         };
@@ -106,7 +106,6 @@
         SWITCH_TO_DEFAULT {
             bindings = <&to 0>;
             key-positions = <0 13 28>;
-            layers = <4>;
         };
     };
 
@@ -116,25 +115,25 @@
         default_layer {
             display-name = "MAIN";
             bindings = <
-&kp ESCAPE     &kp DE_Q  &kp DE_W  &kp DE_E        &kp DE_R  &kp DE_T                   &none         &kp DE_Z   &kp DE_U  &kp DE_I         &kp DE_O       &kp DE_P         &kp DE_U_UMLAUT
-&kp BACKSPACE  &kp DE_A  &kp DE_S  &kp DE_D        &kp DE_F  &kp DE_G            &none  &none  &none  &kp DE_H   &kp DE_J  &kp DE_K         &kp DE_L       &kp DE_O_UMLAUT  &kp DE_A_UMLAUT
-&kp TAB        &kp DE_Y  &kp DE_X  &kp DE_C        &kp DE_V  &kp DE_B   &none           &none         &kp DE_N   &kp DE_M  &kp DE_COMMA     &kp DE_PERIOD  &kp DE_SZ        &kp LEFT_GUI
-                                   &kp LEFT_SHIFT  &mo 1     &kp SPACE                                &kp ENTER  &mo 2     &kp RIGHT_SHIFT
+&kp ESCAPE        &kp DE_Q  &kp DE_W  &kp DE_E      &kp DE_R  &kp DE_T                   &none         &kp DE_Z   &kp DE_U  &kp DE_I      &kp DE_O       &kp DE_P  &kp TAB
+&kp LSHIFT        &kp DE_A  &kp DE_S  &kp DE_D      &kp DE_F  &kp DE_G            &none  &none  &none  &kp DE_H   &kp DE_J  &kp DE_K      &kp DE_L       &mo 4     &kp BACKSPACE
+&kp LEFT_CONTROL  &kp DE_Y  &kp DE_X  &kp DE_C      &kp DE_V  &kp DE_B   &none           &none         &kp DE_N   &kp DE_M  &kp DE_COMMA  &kp DE_PERIOD  &kp DOWN  &kp UP
+                                      &kp LEFT_ALT  &mo 1     &kp SPACE                                &kp ENTER  &mo 2     &kp LGUI
             >;
         };
 
-        lower_layer {
-            display-name = "NUMBER";
+        NUM {
+            display-name = "NUM";
             bindings = <
-&trans  &kp N1  &kp N2  &kp N3   &kp N4   &kp N5                   &none         &kp N6    &kp N7         &kp N8       &kp N9     &kp N0  &none
-&kp F1  &kp F2  &kp F3  &kp F4   &kp F5   &kp F6            &none  &none  &none  &kp LEFT  &kp DOWN       &kp UP       &kp RIGHT  &none   &none
-&kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12  &none           &none         &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &none   &trans
-                        &trans   &trans   &trans                                 &trans    &trans         &trans
+&trans  &kp N1  &kp N2         &kp N3       &kp N4  &kp N5                  &none         &kp N6    &kp N7    &kp N8  &kp N9     &kp N0   &trans
+&trans  &kp F1  &kp PAGE_DOWN  &kp PAGE_UP  &none   &none            &none  &none  &none  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &kp F12  &trans
+&trans  &kp F2  &kp F3         &kp F4       &kp F5  &kp F6  &none           &none         &kp F7    &kp F8    &kp F9  &kp F10    &kp F11  &kp CAPSLOCK
+                               &trans       &trans  &trans                                &trans    &trans    &trans
             >;
         };
 
-        raise_layer {
-            display-name = "SYMBOL";
+        SYM {
+            display-name = "SYM";
             bindings = <
 &trans  &kp DE_EXCLAMATION    &kp DE_AT_SIGN       &kp DE_DOLLAR  &kp DE_PERCENT     &kp DE_PIPE                       &none         &kp DE_AMPERSAND     &kp DE_LEFT_PARENTHESIS  &kp DE_RIGHT_PARENTHESIS  &kp DE_PLUS   &kp DE_CARET     &kp DE_EURO
 &trans  &kp DE_DOUBLE_QUOTES  &kp DE_SINGLE_QUOTE  &kp DE_EQUAL   &kp DE_UNDERSCORE  &kp DE_LESS_THAN           &none  &none  &none  &kp DE_GREATER_THAN  &kp DE_LEFT_BRACKET      &kp DE_RIGHT_BRACKET      &kp DE_MINUS  &kp DE_QUESTION  &kp CAPSLOCK
@@ -153,33 +152,32 @@
             >;
         };
 
-        mac_default_layer {
+        UMLAUTE {
+            bindings = <
+&trans  &trans           &trans           &trans           &trans          &trans                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp DE_O_UMLAUT  &kp DE_A_UMLAUT  &kp DE_U_UMLAUT  &kp DE_SHARP_S  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans           &trans           &trans           &trans          &trans  &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
+                                          &trans           &trans          &trans                                    &trans  &trans  &trans
+            >;
+        };
+
+        X-MAIN {
             display-name = "X-MAIN";
             bindings = <
-&kp ESCAPE     &kp DE_Q  &kp DE_W  &kp DE_E        &kp DE_R  &kp DE_T                   &none         &kp DE_Z   &kp DE_U  &kp DE_I         &kp DE_O       &kp DE_P         &kp DE_U_UMLAUT
-&kp BACKSPACE  &kp DE_A  &kp DE_S  &kp DE_D        &kp DE_F  &kp DE_G            &none  &none  &none  &kp DE_H   &kp DE_J  &kp DE_K         &kp DE_L       &kp DE_O_UMLAUT  &kp DE_A_UMLAUT
-&kp TAB        &kp DE_Y  &kp DE_X  &kp DE_C        &kp DE_V  &kp DE_B   &none           &none         &kp DE_N   &kp DE_M  &kp DE_COMMA     &kp DE_PERIOD  &kp DE_SZ        &kp LEFT_GUI
-                                   &kp LEFT_SHIFT  &mo 5     &kp SPACE                                &kp ENTER  &mo 6     &kp RIGHT_SHIFT
+&kp ESCAPE        &kp DE_Q  &kp DE_W  &kp DE_E      &kp DE_R  &kp DE_T                   &none         &kp DE_Z   &kp DE_U  &kp DE_I      &kp DE_O       &kp DE_P  &kp TAB
+&kp LSHIFT        &kp DE_A  &kp DE_S  &kp DE_D      &kp DE_F  &kp DE_G            &none  &none  &none  &kp DE_H   &kp DE_J  &kp DE_K      &kp DE_L       &mo 4     &kp BACKSPACE
+&kp LEFT_CONTROL  &kp DE_Y  &kp DE_X  &kp DE_C      &kp DE_V  &kp DE_B   &none           &none         &kp DE_N   &kp DE_M  &kp DE_COMMA  &kp DE_PERIOD  &kp DOWN  &kp UP
+                                      &kp LEFT_ALT  &mo 6     &kp SPACE                                &kp ENTER  &mo 2     &kp LGUI
             >;
         };
 
-        mac_lower_layer {
+        X-NUM {
             display-name = "X-NUM";
             bindings = <
-&trans  &kp N1  &kp N2  &kp N3   &kp N4   &kp N5                   &none         &kp N6    &kp N7         &kp N8       &kp N9     &kp N0  &none
-&kp F1  &kp F2  &kp F3  &kp F4   &kp F5   &kp F6            &none  &none  &none  &kp LEFT  &kp DOWN       &kp UP       &kp RIGHT  &none   &none
-&kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12  &none           &none         &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &none   &trans
-                        &trans   &trans   &trans                                 &trans    &trans         &trans
-            >;
-        };
-
-        mac_upper_layer {
-            display-name = "X-SYM";
-            bindings = <
-&trans  &kp DE_MAC_EXCLAMATION       &kp DE_MAC_AT_SIGN 	&kp DE_MAC_DOLLAR  &kp DE_MAC_PERCENT     &kp DE_MAC_PIPE                       &none         &kp DE_MAC_AMPERSAND     &kp DE_MAC_LEFT_PARENTHESIS  &kp DE_MAC_RIGHT_PARENTHESIS  &kp DE_MAC_PLUS   &kp DE_MAC_CARET     &kp DE_EURO
-&trans  &kp DE_DOUBLE_QUOTES  &kp DE_MAC_SINGLE_QUOTE  &kp DE_MAC_EQUAL   &kp DE_MAC_UNDERSCORE  &kp DE_MAC_LESS_THAN           &none  &none  &none  &kp DE_MAC_GREATER_THAN  &kp DE_MAC_LEFT_BRACKET      &kp DE_MAC_RIGHT_BRACKET      &kp DE_MINUS  &kp DE_MAC_QUESTION  &kp CAPSLOCK
-&trans  &kp DE_MAC_GRAVE          &kp DE_ACUTE         &kp DE_MAC_LOGO 	&kp DE_MAC_TILDE       &kp DE_MAC_BACKSLASH  &none           &none         &kp DE_MAC_SLASH         &kp DE_MAC_LEFT_BRACE        &kp DE_MAC_RIGHT_BRACE        &kp DE_ASTRK  &kp DE_HASH      &trans
-                                                   &trans         &trans             &trans                                          &trans               &trans                   &trans
+&trans  &kp N1  &kp N2         &kp N3       &kp N4  &kp N5                  &none         &kp N6    &kp N7    &kp N8  &kp N9     &kp N0   &trans
+&trans  &kp F1  &kp PAGE_DOWN  &kp PAGE_UP  &none   &none            &none  &none  &none  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &kp F12  &trans
+&trans  &kp F2  &kp F3         &kp F4       &kp F5  &kp F6  &none           &none         &kp F7    &kp F8    &kp F9  &kp F10    &kp F11  &kp CAPSLOCK
+                               &trans       &trans  &trans                                &trans    &trans    &trans
             >;
         };
     };
