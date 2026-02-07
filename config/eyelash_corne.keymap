@@ -162,7 +162,7 @@
             >;
         };
 
-        X-MAIN {
+        XMAIN {
             display-name = "X-MAIN";
             bindings = <
 &kp ESCAPE        &kp DE_Q  &kp DE_W  &kp DE_E      &kp DE_R  &kp DE_T                   &none         &kp DE_Z   &kp DE_U  &kp DE_I      &kp DE_O       &kp DE_P  &kp TAB
@@ -172,7 +172,7 @@
             >;
         };
 
-        X-NUM {
+        XNUM {
             display-name = "X-NUM";
             bindings = <
 &trans  &kp N1  &kp N2         &kp N3       &kp N4  &kp N5                  &none         &kp N6    &kp N7    &kp N8  &kp N9     &kp N0   &trans
@@ -182,7 +182,7 @@
             >;
         };
 
-        X-SYM {
+        XSYM {
             display-name = "X-SYM";
             bindings = <
 &trans  &kp DE_MAC_EXCLAMATION  &kp DE_MAC_AT_SIGN       &kp DE_MAC_DOLLAR  &kp DE_MAC_PERCENT     &kp DE_MAC_PIPE                       &none         &kp DE_MAC_AMPERSAND     &kp DE_MAC_LEFT_PARENTHESIS  &kp DE_MAC_RIGHT_PARENTHESIS  &kp DE_MAC_PLUS  &kp DE_MAC_CARET     &trans
