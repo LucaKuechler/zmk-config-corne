@@ -153,6 +153,7 @@
         };
 
         UMLAUTE {
+            display-name = "UMLAUTE";
             bindings = <
 &trans  &trans           &trans           &trans           &trans          &trans                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &kp DE_O_UMLAUT  &kp DE_A_UMLAUT  &kp DE_U_UMLAUT  &kp DE_SHARP_S  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
