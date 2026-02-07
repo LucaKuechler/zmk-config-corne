@@ -82,23 +82,13 @@
             key-positions = <17 16>;
         };
 
-        LEFT_ALT_HR {
-            bindings = <&kp LEFT_ALT>;
-            key-positions = <17 16 15>;
-        };
-
-        RIGHT_ALT_HR {
-            bindings = <&kp LEFT_ALT>;
-            key-positions = <23 24 25>;
-        };
-
         MOVE_LAYER_3 {
             bindings = <&mo 3>;
             key-positions = <43 46>;
         };
 
         SWITCH_TO_MAC {
-            bindings = <&to 0>;
+            bindings = <&to 5>;
             key-positions = <0 13 28>;
             layers = <0>;
         };
