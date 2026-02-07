@@ -399,14 +399,10 @@ combos:
   k: $$mdi:apple-keyboard-control$$
 - p: [17, 16]
   k: $$mdi:apple-keyboard-control$$
-- p: [17, 16, 15]
-  k: $$mdi:apple-keyboard-option$$
-- p: [23, 24, 25]
-  k: $$mdi:apple-keyboard-option$$
 - p: [43, 46]
   k: UTILS
 - p: [0, 13, 28]
-  k: {t: MAIN, h: toggle}
+  k: {t: X-MAIN, h: toggle}
   l: [MAIN]
 - p: [0, 13, 28]
   k: {t: MAIN, h: toggle}
