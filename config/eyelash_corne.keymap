@@ -124,7 +124,7 @@
         };
 
         lower_layer {
-            display-name = "NUMBER";
+            display-name = "NUM";
             bindings = <
 &trans  &kp N1  &kp N2  &kp N3   &kp N4   &kp N5                   &none         &kp N6    &kp N7         &kp N8       &kp N9     &kp N0  &none
 &kp F1  &kp F2  &kp F3  &kp F4   &kp F5   &kp F6            &none  &none  &none  &kp LEFT  &kp DOWN       &kp UP       &kp RIGHT  &none   &none
@@ -176,10 +176,10 @@
         mac_upper_layer {
             display-name = "X-SYM";
             bindings = <
-&trans  &kp DE_MAC_EXCLAMATION       &kp DE_MAC_AT_SIGN 	&kp DE_MAC_DOLLAR  &kp DE_MAC_PERCENT     &kp DE_MAC_PIPE                       &none         &kp DE_MAC_AMPERSAND     &kp DE_MAC_LEFT_PARENTHESIS  &kp DE_MAC_RIGHT_PARENTHESIS  &kp DE_MAC_PLUS   &kp DE_MAC_CARET     &kp DE_EURO
-&trans  &kp DE_DOUBLE_QUOTES  &kp DE_MAC_SINGLE_QUOTE  &kp DE_MAC_EQUAL   &kp DE_MAC_UNDERSCORE  &kp DE_MAC_LESS_THAN           &none  &none  &none  &kp DE_MAC_GREATER_THAN  &kp DE_MAC_LEFT_BRACKET      &kp DE_MAC_RIGHT_BRACKET      &kp DE_MINUS  &kp DE_MAC_QUESTION  &kp CAPSLOCK
-&trans  &kp DE_MAC_GRAVE          &kp DE_ACUTE         &kp DE_MAC_LOGO 	&kp DE_MAC_TILDE       &kp DE_MAC_BACKSLASH  &none           &none         &kp DE_MAC_SLASH         &kp DE_MAC_LEFT_BRACE        &kp DE_MAC_RIGHT_BRACE        &kp DE_ASTRK  &kp DE_HASH      &trans
-                                                   &trans         &trans             &trans                                          &trans               &trans                   &trans
+&trans  &kp DE_MAC_EXCLAMATION  &kp DE_MAC_AT_SIGN       &kp DE_MAC_DOLLAR  &kp DE_MAC_PERCENT     &kp DE_MAC_PIPE                       &none         &kp DE_MAC_AMPERSAND     &kp DE_MAC_LEFT_PARENTHESIS  &kp DE_MAC_RIGHT_PARENTHESIS  &kp DE_MAC_PLUS  &kp DE_MAC_CARET     &kp DE_EURO
+&trans  &kp DE_DOUBLE_QUOTES    &kp DE_MAC_SINGLE_QUOTE  &kp DE_MAC_EQUAL   &kp DE_MAC_UNDERSCORE  &kp DE_MAC_LESS_THAN           &none  &none  &none  &kp DE_MAC_GREATER_THAN  &kp DE_MAC_LEFT_BRACKET      &kp DE_MAC_RIGHT_BRACKET      &kp DE_MINUS     &kp DE_MAC_QUESTION  &kp CAPSLOCK
+&trans  &kp DE_MAC_GRAVE        &kp DE_ACUTE             &kp DE_MAC_LOGO    &kp DE_MAC_TILDE       &kp DE_MAC_BACKSLASH  &none           &none         &kp DE_MAC_SLASH         &kp DE_MAC_LEFT_BRACE        &kp DE_MAC_RIGHT_BRACE        &kp DE_ASTRK     &kp DE_HASH          &trans
+                                                         &trans             &trans                 &trans                                              &trans                   &trans                       &trans
             >;
         };
     };
